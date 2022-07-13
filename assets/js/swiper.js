@@ -26,5 +26,14 @@ const swiper = new Swiper('.swiper', {
         translate: ["100%", 0, 0],
       },
     },
-    mousewheel: true
   });
+
+const swiper1 = new Swiper('.swiper1', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  freeMode: true,
+  freeModeSticky: false,
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+});
+  

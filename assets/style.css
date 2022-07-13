@@ -28,11 +28,20 @@ p {
   margin-top: 30px;
   background-color: #7AC5CD;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #bce2e6;
+  transition: background-color 0.2s linear;
 }
 
 .banner-text {
   width: 50%;
   color: white;
+  -webkit-animation: appear 4s forwards;
+  animation: appear 4s forwards;
+  opacity: 0;
 }
 
 
@@ -51,7 +60,42 @@ p {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
+  overflow: hidden;
 }
+
+.banner-image {
+  width: 40%;
+  position: relative;
+  left: 60%;
+  -webkit-animation: slide-left 2s forwards;
+  animation: slide-left 2s forwards;
+}
+
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-left {
+  100% {
+    left: 0;
+  }
+}
+
 
 @media (min-width: 2560px) {
   body {
@@ -61,10 +105,6 @@ p {
   .banner {
     height: 1440px;
   }
-}
-
-.banner-image {
-  width: 40%;
 }
 
 .nav-bar {
@@ -84,7 +124,7 @@ p {
   width: 100% !important;
   border-radius: 10px !important;
   min-height: 500px !important;
-  background-color: #7AC5CD ;
+  background-color: #7AC5CD;
   color: white;
   display: flex;
   flex-direction: row;
@@ -115,7 +155,6 @@ p {
   background-color: gray;
   border-radius: 10px 0 0 10px;
   background-size: auto 100%;
-  background-size: auto 100%;
   background-position: center;
 }
 
@@ -125,6 +164,7 @@ p {
 
 .image-2 {
   background-image: url("images/digitization.jpg");
+  background-size: 100% auto;
 }
 
 .image-3 {
@@ -164,6 +204,12 @@ p {
   /* Opera/IE 8+ */
 }
 
+.swiper-pagination-bullet:hover {
+  color: #fff !important;
+  background: #7AC5CD !important;
+  transition: all 0.2s linear;
+}
+
 .swiper-pagination-bullet-active {
   color: #fff !important;
   background: #7AC5CD !important;
@@ -180,7 +226,6 @@ p {
 
 .links-section {
   background-color: white;
-  position: relative;
   overflow: hidden;
 }
 
@@ -196,8 +241,8 @@ p {
 }
 
 .link-slide {
-  width: 300px;
-  height: 200px;
+  width: 300px !important;
+  height: 200px !important;
   text-decoration: none;
   overflow: hidden;
   background-color: gray;
@@ -306,6 +351,17 @@ p {
 
 }
 
+.gradient {
+  position: absolute;
+  z-index: 999;
+  background: rgb(203, 203, 203);
+  background: linear-gradient(90deg, rgba(203, 203, 203, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  top: 0;
+  right: 0px;
+  height: 100%;
+  width: 120px;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 15px 30px 15px 30px;
@@ -328,9 +384,34 @@ p {
     top: 25px;
     z-index: -1;
   }
+
+  .link-slide {
+    width: 80% !important;
+    height: 225px !important;
+  }
+
+  .gradient {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
 }
 
-@media (max-height: 784px) {
+@media (max-height: 500px) {
   .banner {
     height: fit-content;
   }
