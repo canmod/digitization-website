@@ -114,10 +114,11 @@ p {
 }
 
 .main-carousel {
-  background-color: #D9D9D9;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
+  background-color: #D9D9D9;
 }
 
 .main-carousel-slide {
