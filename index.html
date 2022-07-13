@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/font awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>IIDDA Landing Page</title>
+</head>
+
+<body>
+    <div class="container nav-bar">
+        <a href="https://canmod.net/"><img src="assets/images/canmod-banner-light.svg"></a>
+    </div>
+    <div class="container banner">
+        <div class="banner-text">
+            <h1>
+                Historical Canadian Infectious Disease Data
+            </h1>
+            <p style = "margin-bottom: 30px;">
+                We are making Canada's historical infectious disease incidence and mortality data publicly and
+                conveniently available
+            </p>
+            <a class="button">Explore our data <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        <img class="banner-image" src="assets/images/64e8013c8278c005d9cb861810422739-removebg-preview (1).png">
+    </div>
+    <div class="container main-carousel">
+        <h2>
+            Our data digitization process
+        </h2>
+        <div class="swiper-pagination"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiper">
+                <!-- Slides -->
+                <div class="swiper-slide main-carousel-slide">
+                    <div class="swiper-slide-image image-1"></div>
+                    <div class="swiper-slide-text">
+                        <h3>1. Scan Source Documents</h3>
+                        <p>We are systematically contacting data stewards across Canada to access the disparate source
+                            documents that contain Canada's historical infectious disease data. We are making scans of
+                            these documents conveniently available for all.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide main-carousel-slide">
+                    <div class="swiper-slide-image image-2"></div>
+                    <div class="swiper-slide-text">
+                        <h3>2. Create Digitized Spreadsheets</h3>
+                        <p>We are manually entering the information provided by these source documents into Excel
+                            spreadsheets, which we are making publicly available. The layout of each spreadsheet is
+                            identical to the original, making it as easy as possible to compare each reproduction with
+                            its source.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide main-carousel-slide">
+                    <div class="swiper-slide-image image-3"></div>
+                    <div class="swiper-slide-text">
+                        <h3>3. Create Tidy Data Frames and CSV Files</h3>
+                        <p>We are producing reproducible automated processes for converting the digitized spreadsheets
+                            into tidy data structures. These data structures contain all of the information in the
+                            original source documents, but are more convenient for analysis and discovery.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide main-carousel-slide">
+                    <div class="swiper-slide-image image-4"></div>
+                    <div class="swiper-slide-text">
+                        <h3>4. Develop Data Harmonization Tools</h3>
+                        <p>The information in the original source documents often present challenges for data analysis
+                            and modelling (e.g. missing report weeks, disease names and classifications that change over
+                            the years). We are therefore producing tools for converting the tidy data structures that
+                            are convenient for exploring the data as-they-are, into data sets ready for analysis. These
+                            tools include options and features for exploring the consequences of various data
+                            harmonization and imputation techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+        </div>
+    </div>
+    <div class="container links-section">
+        <h2>
+            Our Work
+        </h2>
+        <!-- Additional required wrapper -->
+        <div class="links-wrapper">
+            <!-- Slides -->
+            <a href = "https://github.com/canmod/iidda" target="_blank" class="link-slide link-image-1">
+                <h2 class="link-title">IIDDA</h2>
+                <small class="link-description">International Infectious Disease Data Archive (IIDDA)</small>
+            </a>
+            <a href = "#" target="_blank" class="link-slide link-image-2">
+                <h2 class="link-title">IIDDA API</h2>
+                <small class="link-description">API allowing users to access datasets available through IIDDA and other repositories.</small>
+            </a>
+            <a href = "https://github.com/canmod/iidda-tools" target="_blank" class="link-slide link-image-3">
+                <h2 class="link-title">IIDDA Tools</h2>
+                <small class="link-description">Open toolchain for processing infectious disease datasets available through IIDDA and other repositories.</small>
+            </a>
+            <a href = "#" target="_blank" class="link-slide link-image-4">
+                <h2 class="link-title">IIDDA Web App</h2>
+                <small class="link-description">Web-app allowing users to plot and export datasets available through IIDDA and other repositories.</small>
+            </a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+</body>
+
+<footer class="container">
+    <small>© <a href = "https://canmod.net/" style="color: white;">CANMOD</a> 2021</small><br>
+    <small>We acknowledge the support of the Natural Sciences and Engineering Research Council of Canada (NSERC).
+        Nous remercions le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG) de son soutien.</small>
+</footer>
+    
+</html>
