@@ -517,6 +517,49 @@ footer {
   border-radius: 10px;
 }
 
+.steps-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(33, 37, 41, 1) 0%, rgba(122, 197, 205, 1) 100%);
+  color: white;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 200px 0;
+  flex-wrap: wrap;
+}
+
+.step-container:last-child {
+  margin-bottom: 0;
+}
+
+.right {
+  flex-direction: row !important;
+}
+
+.left {
+  flex-direction: row-reverse !important;
+}
+
+.timeline-image {
+  width: 40%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: left center;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.content {
+  width: 50%;
+}
+
 @media (max-width: 1000px) {
   .container {
     padding: 30px 60px 30px 60px;
@@ -550,7 +593,7 @@ footer {
   }
 
   .banner-text1 {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 180px);
     top: 120px;
     margin: 30px 60px 30px 60px;
   }
@@ -578,6 +621,19 @@ footer {
 
   p {
     font-size: 1rem;
+  }
+
+  .timeline-image {
+    width: 100%;
+
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .step-container {
+    margin-bottom: 100px;
   }
 }
 
@@ -614,7 +670,7 @@ footer {
   }
 
   .banner-text1 {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 120px);
     top: 120px;
     margin: 15px 30px 15px 30px;
   }
@@ -628,45 +684,4 @@ footer {
   .banner-container {
     height: 600px;
   }
-}
-
-.steps-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(33, 37, 41, 1) 0%, rgba(122, 197, 205, 1) 100%);
-  color: white;
-}
-
-.step-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 200px 0;
-}
-
-.step-container:last-child {
-  margin-bottom: 0;
-}
-
-.right {
-  flex-direction: row !important;
-}
-
-.left {
-  flex-direction: row-reverse !important;
-}
-
-.timeline-image {
-  width: 40%;
-  height: 40vh;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-}
-
-.content {
-  width: 50%;
 }
