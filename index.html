@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>IIDDA Landing Page</title>
 </head>
@@ -16,60 +17,12 @@
     <div class="container nav-bar">
         <a href="https://canmod.net/"><img src="assets/images/canmod-banner-light.svg"></a>
     </div>
-    <!--
-    <div class="container banner">
-        <div class="banner-text">
-            <h1>
-                Historical Canadian Infectious Disease Data
-            </h1>
-            <p style="margin-bottom: 30px;">
-                We are making Canada's historical infectious disease incidence and mortality data publicly and
-                conveniently available
-            </p>
-            <a class="button">Explore our data <i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-        <div class="banner-image">
-            <div class="swiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/Bureau of Public Health Annual Report 1910-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/cenusus of canada 1921-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/department of public health annual report 1952-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/Dominion Bureau of Statistics January 7 1956-min.png" />
-                    </div>
-                </div>
-            </div>
-            <div thumbsSlider="" class="swiper2-thumb">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/Bureau of Public Health Annual Report 1910-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/cenusus of canada 1921-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/department of public health annual report 1952-min.png" />
-                    </div>
-                    <div class="swiper-slide banner-slide">
-                        <img src="assets/images/Dominion Bureau of Statistics January 7 1956-min.png" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
     <div class="banner-container">
         <div class="banner-text1">
             <h1>
                 Historical Canadian Infectious Disease Data
             </h1>
-            <p style="margin-bottom: 30px;">
+            <p>
                 We are making Canada's historical infectious disease incidence and mortality data publicly and
                 conveniently available
             </p>
@@ -108,58 +61,47 @@
             </div>
         </div>
     </div>
-    <div class="container main-carousel">
-        <h2>
-            Our data digitization process
-        </h2>
-        <div class="swiper-pagination"></div>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" id="swiper">
-                <!-- Slides -->
-                <div class="swiper-slide main-carousel-slide">
-                    <div class="swiper-slide-image image-1"></div>
-                    <div class="swiper-slide-text">
-                        <h3>1. Scan Source Documents</h3>
-                        <p>We are systematically contacting data stewards across Canada to access the disparate source
-                            documents that contain Canada's historical infectious disease data. We are making scans of
-                            these documents conveniently available for all.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide main-carousel-slide">
-                    <div class="swiper-slide-image image-2"></div>
-                    <div class="swiper-slide-text">
-                        <h3>2. Create Digitized Spreadsheets</h3>
-                        <p>We are manually entering the information provided by these source documents into Excel
-                            spreadsheets, which we are making publicly available. The layout of each spreadsheet is
-                            identical to the original, making it as easy as possible to compare each reproduction with
-                            its source.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide main-carousel-slide">
-                    <div class="swiper-slide-image image-3"></div>
-                    <div class="swiper-slide-text">
-                        <h3>3. Create Tidy Data Frames and CSV Files</h3>
-                        <p>We are producing reproducible automated processes for converting the digitized spreadsheets
-                            into tidy data structures. These data structures contain all of the information in the
-                            original source documents, but are more convenient for analysis and discovery.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide main-carousel-slide">
-                    <div class="swiper-slide-image image-4"></div>
-                    <div class="swiper-slide-text">
-                        <h3>4. Develop Data Harmonization Tools</h3>
-                        <p>The information in the original source documents often present challenges for data analysis
-                            and modelling (e.g. missing report weeks, disease names and classifications that change over
-                            the years). We are therefore producing tools for converting the tidy data structures that
-                            are convenient for exploring the data as-they-are, into data sets ready for analysis. These
-                            tools include options and features for exploring the consequences of various data
-                            harmonization and imputation techniques.</p>
-                    </div>
-                </div>
+
+    <div class="container steps-section">
+        <div class="step-container right">
+            <img class="timeline-image" src="assets/images/source.jpg">
+            <div class="content">
+                <h2>Scan Source Documents</h2>
+                <p>We are systematically contacting data stewards across Canada to access the disparate source
+                    documents that contain Canada's historical infectious disease data. We are making scans of
+                    these documents conveniently available for all.</p>
             </div>
-            <!-- If we need pagination -->
+        </div>
+        <div class="step-container left">
+            <img class="timeline-image" src="assets/images/digitization.jpg">
+            <div class="content">
+                <h2>Create Digitized Spreadsheets</h2>
+                <p>We are manually entering the information provided by these source documents into Excel
+                    spreadsheets, which we are making publicly available. The layout of each spreadsheet is
+                    identical to the original, making it as easy as possible to compare each reproduction with
+                    its source.</p>
+            </div>
+        </div>
+        <div class="step-container right">
+            <img class="timeline-image" src="assets/images/tidy.jpg">
+            <div class="content">
+                <h2>Create Tidy Data Frames and CSV Files</h2>
+                <p>We are producing reproducible automated processes for converting the digitized spreadsheets
+                    into tidy data structures. These data structures contain all of the information in the
+                    original source documents, but are more convenient for analysis and discovery.</p>
+            </div>
+        </div>
+        <div class="step-container left">
+            <img class="timeline-image" src="assets/images/tools.png">
+            <div class="content">
+                <h2>Develop Data Harmonization Tools</h2>
+                <p>The information in the original source documents often present challenges for data analysis
+                    and modelling (e.g. missing report weeks, disease names and classifications that change over
+                    the years). We are therefore producing tools for converting the tidy data structures that
+                    are convenient for exploring the data as-they-are, into data sets ready for analysis. These
+                    tools include options and features for exploring the consequences of various data
+                    harmonization and imputation techniques.</p>
+            </div>
         </div>
     </div>
     <div class="container links-section">
@@ -177,26 +119,29 @@
                 </a>
                 <a href="#" target="_blank" class="swiper-slide link-slide link-image-2">
                     <h2 class="link-title">IIDDA API</h2>
-                    <small class="link-description">API allowing users to access datasets available through IIDDA and
+                    <small class="link-description">API allowing users to access datasets available through IIDDA
+                        and
                         other repositories.</small>
                 </a>
                 <a href="https://github.com/canmod/iidda-tools" target="_blank"
                     class="swiper-slide link-slide link-image-3">
                     <h2 class="link-title">IIDDA Tools</h2>
-                    <small class="link-description">Open toolchain for processing infectious disease datasets available
+                    <small class="link-description">Open toolchain for processing infectious disease datasets
+                        available
                         through IIDDA and other repositories.</small>
                 </a>
                 <a href="#" target="_blank" class="swiper-slide link-slide link-image-4">
                     <h2 class="link-title">IIDDA Web App</h2>
-                    <small class="link-description">Web-app allowing users to plot and export datasets available through
+                    <small class="link-description">Web-app allowing users to plot and export datasets available
+                        through
                         IIDDA and other repositories.</small>
                 </a>
             </div>
-            <div class="gradient"></div>
         </div>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/animate.js"></script>
 </body>
 
 <footer class="container">
